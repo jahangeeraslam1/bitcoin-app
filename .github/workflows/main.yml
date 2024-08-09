@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.DOCKER_AUTH_TOKEN }}
   
       - name: Build Docker Image
-        run: docker build -f Dockerfile -t myBitcoinApp:latest .
+        run: docker build -f Dockerfile -t my-bitcoin-app:latest .
         # run indicates it will be a shell command
         # docker build is used to build a new image 
         # -f Dockerfile specifies the name and location of my dockerfile to be used for building the image 
